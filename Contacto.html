@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head> 
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+    <title>INSTITUTO DE LA JUVENTUD - Contacto</title>
+    <script src="https://kit.fontawesome.com/137467ad9b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" href= "CSS/estilos.css">
+</head>    
+
+<body>
+    <div class= "cuerpo">
+        <header>
+            <div class= "brand">
+                <a class= "logo" href= "index.html"><i class="fab fa-think-peaks fa-2x"> </i></a>
+                <a class= "titulo" href= "index.html"> Instituto de la Juventud</a>
+            </div>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><i class="fas fa-bars fa-2x"> </i></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href= "Muestraarte.html">Muestra de arte</a></li>
+                    <li><a href= "Viajesestudio.html">Viajes de Estudio</a></li>
+                    <li><a href= "Historia.html"> Historia </a></li>
+                    <li><a href= "Contacto.html"> Contacto </a></li> 
+                    <li>
+                        <input type="search" placeholder="Buscar">
+                        <button>Ir</button>
+                        
+                    </li>
+                </ul>
+            </nav>
+            
+            
+        </header>
+            <main class= "formulario">
+                <h4>¿Querés ser parte de nuestro Instituto?</h4>
+        
+                <form action="respuesta.html">
+
+                        <label>Nombre y apellido:
+                            <input type="text" name="Nombre" placeholder="Ingresa tu nombre" required>
+                        </label>
+                        <br>
+                        <br>
+                        <p>
+                            <label>Edad:
+                                <input type="text" name="Edad" placeholder="Ingresa tu edad" required>
+                            </label>
+                        </p>
+                        <br>
+                        <p>
+                            <label>Email:
+                                <input type="email" name="Email" placeholder="Ingresa tu e-mail" required>
+                            </label>
+                        </p>
+                        <br>
+                        <p>
+                            <label>WhatsApp:
+                                <input type="tel" name="Celular" placeholder="Ingresa tu celular" required>
+                            </label>
+                        </p>
+                        <br>
+                        <p>
+                            <label>Lugar de residencia actual:
+                                <br>
+                                <br>
+                                <p>
+                                    <textarea name="Mensaje" cols="30" rows="5" placeholder="barrio/ciudad" required></textarea>
+                                </p>
+                            </label>
+                        </p>
+                        <br>
+                        <br>
+                        <p> Nivel de estudios:</p>
+                            <br>
+                            <label>Secundario completo / Universitario o terciario en curso
+                                <input type="radio" name="GustoComida" value="Dulce">
+                            </label>
+                            <br>
+                            <label>Universitario o terciario completo
+                                <input type="radio" name="GustoComida" value="Salado">
+                            </label>
+                        
+                        <p>¿Trabajás o estudiás?</p>
+                        <br>
+                        <select name="Ocupación">
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Ambos" selected>Ambos</option> 
+                            <option value="Estudio">Estudio</option>
+                        </select>
+                        <br>
+                        <br>
+                        <p>Vía de contacto preferida:</p>
+                        <br>
+                        <label>Email:
+                            <input type="checkbox" name="mail" id="mail" >
+                        </label>
+                        <label>WhatsApp:
+                            <input type="checkbox" name="whatsapp" id="whatsapp" > 
+                        </label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                </form>
+            </main>
+            
+            
+        </div>
+        
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                <li>IDJuventud SRL - Dirección xxxx CABA - 2020</li>
+                <li><a class= "titulo" href= "index.html"> Instituto de la Juventud</a></li>
+                <li><a class= "logo" href= "index.html"><i class="fab fa-think-peaks fa-2x"> </i></a></li>
+            </ul>
+            
+        </footer>       
+    </div>
+</body>
+
+
+</html>

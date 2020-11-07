@@ -1,0 +1,693 @@
+html {
+    font-size: 62.5%;
+    background-color: palegoldenrod;
+}
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Kumbh+Sans&display=swap');
+}
+
+img{
+    width:100%;
+}
+iframe{
+    width:100%;
+}
+
+
+h1{
+    color:rgb(119, 66, 5);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+    color: rgba(255, 227, 184, 0.856);
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+h3{
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h4{
+    font-size: 4rem;
+    color: rgba(202, 79, 7, 0.856);
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+h5{
+    font-size: 2rem;
+    color: rgba(255, 227, 184, 0.856);
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+header {
+    display:flexbox;
+    width: 100%;
+    height: 10%;
+    background-color:  rgb(184, 164, 109);
+    margin-top: 0rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  
+}
+.brand{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.logo, .titulo {
+    font-size: 3rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    color:  rgb(216, 206, 163);
+
+}
+
+#btn-menu {
+    display: none;
+    align-items: center;
+    text-align: left;
+
+}
+header label {
+    display: none;
+    color: whitesmoke;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    padding-top: 1rem;
+ 
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+header form{
+    display: flex;
+    margin: auto;
+    padding-left:none;
+}
+
+.navbar li a:hover {
+    background-color: rgb(194, 148, 103);
+    padding: 1rem;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+
+}
+
+.navbar {
+    display: block;
+    justify-content: center;
+    background-color: rgb(148, 118, 61);
+
+  
+}
+
+.navbar ul{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7rem;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar li{
+    border-right: 0.1rem solid whitesmoke;
+    flex-grow: 1;
+}
+.navbar li a {
+    display: block;
+    padding: 1rem;
+    color: whitesmoke;
+
+}
+
+.logo>a{
+    color: rgba(201, 197, 171, 0.856);
+    
+
+}
+.titulo>a{
+    color: rgba(201, 197, 171, 0.856);
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2.7rem;
+}
+
+.cuerpohome {
+    padding: 1rem;
+    height: 100rem;
+    width:100%;
+    display: grid;
+    grid-template-areas: "f f" "t s" "t s";
+    grid-gap: 1rem;
+    background-color: palegoldenrod;
+}
+
+.bienvenida {
+    background-color:rgb(187, 184, 153);
+    grid-area: f;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: rgba(202, 79, 7, 0.856);
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.logo2{
+    text-align: center;
+    color: rgba(202, 79, 7, 0.856);
+    font-size: 4rem;
+}
+
+.sidebar {
+    background-color:rgb(235, 228, 155);
+    grid-area: t;
+    height: fit-content;
+    width:100%;
+    text-align: center;
+    color: rgba(202, 79, 7, 0.856);
+    padding: 4rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.moreinfo {
+    background-color:rgb(235, 228, 155);
+    grid-area: s;
+    height: 50rem;
+    text-align: center;
+    padding: 4rem;
+    color: rgba(202, 79, 7, 0.856);
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sushi {
+    height: 25rem;
+    width: 25rem;
+    margin: 0 auto;
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.6);
+      border-radius: 100%;
+    }
+    100% {
+      transform: scale(1.2);
+    }
+}
+
+.muestradearte {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "t s u v";
+    background-color: rgb(156, 99, 33);
+    grid-gap: 1rem;
+    border: 0.5rem whitesmoke solid;
+}
+
+
+
+.titulopagina {
+    width:100%;
+    padding: 1rem;
+    display: block;
+    background-color:rgb(235, 214, 155);
+    height: fit-content;
+    text-align: center;
+    align-content: center;
+    border-top:1rem whitesmoke solid;
+    border-bottom:1rem whitesmoke solid;
+}
+
+
+.h1 {
+    font-size: 6rem;
+}
+
+.arte{
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    animation-name: stretch;
+    animation-duration: 5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.5);
+      border-radius: 100%;
+    }
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+}
+.cuerpos {
+    width:30rem;
+    padding-top: 2rem;
+    background-color:rgb(136, 134, 110);
+    grid-area: t;
+    height: 40rem;
+    text-align: center;
+    border: 0.5rem whitesmoke solid;
+}
+
+.ballena {
+    width:30rem;
+    padding-top: 2rem;
+    background-color:rgb(187, 184, 153);
+    grid-area: s;
+    height: 40rem;
+    text-align: center;
+    border: 0.5rem whitesmoke solid;
+}
+
+.limones {
+    width:30rem;
+    padding-top: 2rem;
+    background-color:rgb(187, 184, 153);
+    grid-area: u;
+    height: 40rem;
+    text-align: center;
+    border: 0.5rem whitesmoke solid;
+}
+
+.alamos {
+    width:30rem;
+    padding-top: 2rem;
+    background-color:rgb(136, 134, 110);
+    grid-area: v;
+    height: 40rem;
+    text-align: center;
+    border: 0.5rem whitesmoke solid;
+}
+
+.blog {
+    display: grid;
+    grid-template-areas: "s t" "u v" "j k";
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(228, 221, 217, 0.856);
+    background-color: #727c88;
+    grid-gap: 3rem;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.blog1{
+    background-color:rgb(136, 134, 110);
+    grid-area: s;
+    height: fit-content;
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+.blog2{
+    background-color:rgb(136, 134, 110);
+    grid-area: t;
+    height: fit-content;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.blog3{
+    background-color:rgb(136, 134, 110);
+    grid-area: u;
+    height: fit-content;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.blog4{
+    background-color:rgb(136, 134, 110);
+    grid-area: v;
+    height: fit-content;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.blog5{
+    background-color:rgb(136, 134, 110);
+    grid-area: j;
+    height: fit-content;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.blog6{
+    background-color:rgb(136, 134, 110);
+    grid-area: k;
+    height: fit-content;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.entrada-blog a {
+    display: inline-block;
+    background-color: #f3cd21;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.historial{
+    background-color:rgb(155, 140, 121);
+    color: rgb(219, 216, 210);
+    font-weight: bolder;
+    margin: 0;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+article {
+    border: 0.5rem whitesmoke solid;
+    padding: 4rem;
+    margin:0;
+}
+aside {
+    border: 0.5rem whitesmoke solid;
+    padding: 4rem;
+    margin:0;
+}
+/*.contacto{
+    box-sizing: border-box;
+    padding: 1rem;
+    height: fit-content;
+    width:100%;
+    display: grid;
+    grid-template-areas: "t";
+    grid-gap: 2rem;
+    background-color: palegoldenrod;
+}
+*/
+
+    
+.formulario{
+    grid-area:f;
+    color: rgba(202, 79, 7, 0.856);
+    background-color: rgb(216, 206, 163);
+    padding: 2rem;
+    width:100%;
+    height:auto;
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 0.5rem white solid;
+}
+
+/*.relleno{
+    background-color: rgb(216, 206, 163);
+    grid-area: t;
+    width:100%;
+    text-align: center;
+    height: auto;
+    padding: 1rem;
+}
+*/
+.error {
+    background-color:rgb(187, 184, 153);
+    grid-area: f;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 10rem;
+    color: rgba(0, 0, 0, 0.856);
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.cuerpohomeerror {
+    height: 100%;
+    width:100%;
+    display: block;
+    background-color: palegoldenrod;
+}
+footer {
+    display:flexbox;
+    width: 100%;
+    height: 10%;
+    background-color:  rgb(184, 164, 109);
+    margin-top: 0rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    color: white;
+    
+}
+
+footer ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer li{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7rem;
+    margin: 1rem;
+    
+}
+footer li a{
+    color:white;
+    
+    
+}
+@media (max-width:1240px) {
+    .muestradearte {
+        height: fit-content;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: "t s" "u v";
+        background-color: rgb(156, 99, 33);
+        grid-gap: 1rem;
+        border: 0.5rem whitesmoke solid;
+    }
+}
+
+
+
+@media (max-width: 640px){
+    header label{
+        display: block;
+    }
+    header .logo{
+        display:none;
+    }
+    .brand{
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+    .navbar {
+        position:absolute;
+        background-color: rgb(148, 118, 61);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.4s;
+
+
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar li{
+        border: none;
+    }
+    #btn-menu:checked ~ .navbar {
+        margin:0;
+    }
+    footer .titulo{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+
+    .cuerpohome {
+    
+        padding: 3rem;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        width: 100%;
+        height:160rem;
+        grid-template-areas: "f" "t" "s";
+        grid-gap: 1rem;
+        background-color: palegoldenrod;
+    }
+
+    .sidebar {
+        background-color:rgb(235, 228, 155);
+        grid-area: t;
+        height: fit-content;
+        width:100%;
+        text-align: center;
+        color: rgba(202, 79, 7, 0.856);
+        padding: 4rem;
+        font-size: 4rem;
+        font-weight: bolder;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .moreinfo {
+        background-color:rgb(235, 228, 155);
+        grid-area: s;
+        height: 50rem;
+        text-align: center;
+        padding: 4rem;
+        color: rgba(202, 79, 7, 0.856);
+        font-size: 4rem;
+        font-weight: bolder;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .titulopagina{
+        margin:0;
+        width:100%;
+    }
+    .muestradearte {
+        padding-top: 1rem;
+        margin:none;
+        text-align: center; 
+        align-content: center;
+        justify-content: center;
+        width:100%;
+        display: grid;
+        height: fit-content;
+        grid-template-areas: "t" "s" "u" "v";
+        background-color: rgb(156, 99, 33);
+        grid-gap: 1rem;
+        border: none;
+
+    }
+    
+    .blog {
+        display: grid;
+        grid-template-areas: "s" "t" "u" "v" "j" "k";
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgba(228, 221, 217, 0.856);
+        background-color: #727c88;
+        grid-gap: 3rem;
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+
+    .contacto{
+        padding: 1rem;
+        height: 160rem;
+        display: grid;
+        grid-template-areas: "f" "t";
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        background-color: palegoldenrod;
+    }
+    .formulario{
+        grid-area:f;
+        color: rgba(202, 79, 7, 0.856);
+        background-color: rgb(216, 206, 163);
+        padding: 2rem;
+        width:100%;
+        font-weight: bolder;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .relleno{
+        background-color: rgb(216, 206, 163);
+        grid-area: t;
+        width:100%;
+        text-align: center;
+        height: fit-content;
+        padding: 10rem;
+    }
+}
